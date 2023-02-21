@@ -137,6 +137,6 @@ Help me with your criticisms and your suggestions, you will be blessed for such 
 
 ## 📝 License <a name="license"></a>
 
-This project is [GNU General Public Licence v3.0](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
