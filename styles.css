@@ -86,14 +86,18 @@ main {
   width: 100%;
   margin-top: 114px;
   padding: 0 16px;
+
+  display: grid;
+  grid-template-rows: auto;
+  gap: 88px;
+
 }
 
 .works1 {
   width: 100%;
   background: white;
   border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 88px;
+  padding: 16px;  
   border: #dfe1e6 solid 1px;
 }
 
@@ -206,6 +210,7 @@ main {
   width: 100%;
   background: white;
   border-top-right-radius: 5rem;
+  margin-top: 114px;
 }
 
 .about-desc {
