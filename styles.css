@@ -236,9 +236,13 @@ main {
 }
 
 .about-skills ul li {
-  margin: 24px 40px  24px 0;
+  /* margin: 24px 40px  24px 0; */
+  margin: 24px 0px  24px 0;
 }
 
+.brd-r {
+  padding-right: 40px;
+}
 .about-skills ul hr {
   background: #dfe1e6;
   width: 100%;
