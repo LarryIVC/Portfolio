@@ -39,7 +39,7 @@ main {
 
 .page1 {
   background-color: #fff;
-  background-image: url(/image/bg-header.png);
+  background-image: url(image/bg-header.png);
   background-repeat: no-repeat;
   padding: 100px 24px 0 24px;
   border-bottom-left-radius: 5rem;
@@ -75,16 +75,12 @@ main {
 .social {
   display: flex;
   padding-top: 12px;
-
-  /* padding-bottom: 136px; */
   list-style: none;
 }
 
 .social li {
   margin-right: 20px;
 }
-
-/* seccion works */
 
 .works {
   width: 100%;
@@ -103,8 +99,6 @@ main {
 
 .work-snap img {
   width: 100%;
-
-  /* border:0; */
 }
 
 .work-desc {
@@ -186,10 +180,6 @@ main {
   border: #7f8cff solid 1px;
   border-radius: 8px;
   background: none;
-
-  /* margin-top: 40px; */
-
-  /* margin-bottom: 10px; */
 }
 
 .brd-btm {
@@ -259,8 +249,6 @@ main {
 .languages {
   display: flex;
   justify-content: space-between;
-
-  /* margin-bottom: 36px; */
 }
 
 .spc-36 {
