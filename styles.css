@@ -35,6 +35,9 @@ header a {
 
 main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 114px;
 }
 
 .page1 {
@@ -47,6 +50,9 @@ main {
 
 .pg1-container {
   padding-bottom: 136px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .page1 h1 {
@@ -61,7 +67,6 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  padding-top: 12px;
 }
 
 .sub-txt {
@@ -69,44 +74,35 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  padding-top: 12px;
 }
 
 .social {
   display: flex;
-  padding-top: 12px;
+  padding: 14px 0 0 10px;
   list-style: none;
-}
-
-.social li {
-  margin-right: 20px;
+  gap: 20px;
 }
 
 .works {
   width: 100%;
-  margin-top: 114px;
   padding: 0 16px;
-
   display: grid;
   grid-template-rows: auto;
   gap: 88px;
-
 }
 
 .works1 {
   width: 100%;
   background: white;
   border-radius: 16px;
-  padding: 16px;  
+  padding: 16px;
   border: #dfe1e6 solid 1px;
-}
-
-.work-snap img {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .work-desc {
-  padding-top: 12px;
   padding-bottom: 8px;
 }
 
@@ -124,7 +120,7 @@ main {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 3%;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .small-button li {
@@ -210,11 +206,16 @@ main {
   width: 100%;
   background: white;
   border-top-right-radius: 5rem;
-  margin-top: 114px;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 12px;
 }
 
 .about-desc {
   padding: 114px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .about-desc h2 {
@@ -233,35 +234,41 @@ main {
 
 .about-skills {
   width: 100%;
-  padding: 36px 36px 114px 36px;
+  padding: 24px 36px 114px 36px;
 }
 
 .about-skills ul {
   list-style: none;
 }
 
-.about-skills ul li {
-  /* margin: 24px 40px  24px 0; */
-  margin: 24px 0px  24px 0;
+.lang {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 36px;
 }
 
 .brd-r {
   padding-right: 40px;
 }
+
+#disabled {
+  margin-top: 36px;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
 .about-skills ul hr {
   background: #dfe1e6;
   width: 100%;
   height: 1px;
   border: none;
+  margin: 24px 0;
 }
 
 .languages {
   display: flex;
   justify-content: space-between;
-}
-
-.spc-36 {
-  margin-bottom: 36px;
 }
 
 .languages span {
@@ -277,7 +284,6 @@ main {
   background: #f7f7f9;
   border-radius: 8px;
   justify-content: flex-start;
-  margin-bottom: 12px;
   padding: 9px 0 9px 12px;
 }
 
