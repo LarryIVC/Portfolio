@@ -297,3 +297,18 @@ main {
   line-height: 20px;
   color: #253858;
 }
+
+/* contact form  */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6070FF;
+  background-image: url(image/bg-contat-form.png);
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 779px;
+}
+
+.cont {}
