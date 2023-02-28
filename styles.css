@@ -307,8 +307,36 @@ main {
   background-color: #6070FF;
   background-image: url(image/bg-contat-form.png);
   background-repeat: no-repeat;
-  width: 375px;
-  height: 779px;
+  margin-top: -114px;
 }
 
-.cont {}
+.cont {
+margin-top: 103px;
+width: auto;
+height: 56px;
+text-align: center;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #ffffff;
+}
+
+ .contact-form p {
+  width: auto;
+  height: auto;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 12px 24px;
+}
+
+.contact-form input {
+  width: 372px;
+  height: 48px;
+  margin: 10px 24px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
