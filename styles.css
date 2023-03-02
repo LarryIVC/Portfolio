@@ -7,11 +7,13 @@
 
 body {
   background: #f7f7f9;
+  font-size: 16px;  
 }
 
 header {
   display: flex;
   width: 100%;
+  max-width: 375px;
   justify-content: space-between;
   padding: 20px 35px 20px 24px;
   background: #fff;
@@ -25,11 +27,20 @@ header a {
   text-decoration: none;
 }
 
+/* menu {
+  float:left;
+  
+} */
+
 .menu-box {
-  width: 100%;
+  display:flex;
 }
 
 .menu-op {
+  /* visibility: hidden; */
+  list-style: none;
+  display: flex;
+  gap: 32px;
   display: none;
 }
 
@@ -362,4 +373,30 @@ main {
   border: none;
   margin: auto;
   margin-top: 32px;
+}
+
+@media screen and (min-width: 768px){
+
+  header {
+    max-width:none;
+    background-color: red;
+  }
+
+  .menu {
+    /* display: flex; */
+    align-items: center;
+  }
+
+  .menu-box {
+    display: none;
+  }
+  
+  .menu-op {
+    display: flex;
+    position: relative;
+    top: 0;
+    left:0;
+      
+  }
+
 }
