@@ -15,17 +15,17 @@ header {
 
 .my-header {
   margin: 0 auto;
-  max-width: 375px;
+  max-width: 23.4375em;
   width: 100%;
-  padding: 20px 35px 20px 24px;
+  padding: 1.25em 2.18em 1.25em 1.5em;
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.12em;
+  line-height: 1.25rem;
   color: #6070ff;
   text-decoration: none;
   transform: rotate(360deg);
@@ -37,13 +37,13 @@ header {
 }
 
 .works1 img {
-  width: 295px;
-  height: 220px;
+  width: 18.43em;
+  height: 13.75em;
   transition-duration: 300ms;
 }
 
 .lng-item img {
-  margin-right: 16px;
+  margin-right: 1em;
 }
 
 .social li a img {
@@ -62,15 +62,15 @@ header {
 
 .menu-op {
   list-style: none;
-  gap: 32px;
+  gap: 2em;
   display: none;
 }
 
 .item a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.93em;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #344563;
 }
 
@@ -82,7 +82,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 114px;
+  gap: 7.12em;
   background: #f7f7f9;
 }
 
@@ -90,45 +90,45 @@ main {
   width: 100%;
   background-image: url(image/bg-header.png);
   background-repeat: no-repeat;
-  padding: 100px 24px 0 24px;
-  border-bottom-left-radius: 5rem;
+  padding: 6.25em 1.5em 0 1.5em;
+  border-bottom-left-radius: 5em;
   background-color: #fff;
 }
 
 .pg1-container {
   margin: 0 auto;
-  padding-bottom: 136px;
+  padding-bottom: 8.5em;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75em;
 }
 
 .page1 h1 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5em;
+  line-height: 3.25rem;
   color: #172b4d;
 }
 
 .page1 p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5rem;
   color: #344563;
 }
 
 .sub-txt {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5rem;
   color: #7f8cff;
 }
 
 .social {
   display: flex;
-  padding: 14px 0 0 10px;
+  padding: 0.87em 0 0 0.62em;
   list-style: none;
-  gap: 20px;
+  gap: 1.25em;
   align-items: flex-end;
 }
 
@@ -138,63 +138,63 @@ main {
 
 .works {
   width: 100%;
-  padding: 0 16px;
+  padding: 0 1em;
   display: grid;
   grid-template-rows: auto;
-  gap: 88px;
+  gap: 5.5em;
 }
 
 .works1 {
   background: white;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 1em;
+  padding: 1em;
   border: #dfe1e6 solid 1px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75em;
   align-items: center;
 }
 
 .work-desc {
-  padding-bottom: 8px;
+  padding-bottom: 0.5em;
 }
 
 .work-desc h2 {
-  font-size: 34px;
+  font-size: 2.12em;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 2.75rem;
   color: #172b4d;
 }
 
 .small-button {
   display: flex;
   list-style: none;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: 3%;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
 }
 
 .small-button li {
-  padding: 4px 12px;
-  margin-right: 8px;
-  border-radius: 8px;
+  padding: 0.25em 0.75em;
+  margin-right: 0.5em;
+  border-radius: 0.5em;
   background-color: #ebebff;
   color: #6070ff;
 }
 
 .sub-box {
   display: flex;
-  padding-top: 12px;
+  padding-top: 0.75em;
   align-items: center;
-  gap: 12px;
+  gap: 0.75em;
 }
 
 .sub-box h3 {
-  font-size: 13px;
+  font-size: 0.81em;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1rem;
   color: #344563;
 }
 
@@ -206,29 +206,29 @@ main {
 }
 
 .sub-box ul li {
-  font-size: 13px;
+  font-size: 0.81em;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1rem;
   color: #7a869a;
-  margin-right: 12px;
+  margin-right: 0.75em;
 }
 
 .work-desc p {
-  padding-top: 20px;
-  padding-bottom: 16px;
-  font-size: 15px;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+  font-size: 0.93em;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: #344563;
 }
 
 .see-button {
-  font-size: 17px;
+  font-size: 1.06em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
   color: #396df2;
-  padding: 12px;
+  padding: 0.75em;
   border: #7f8cff solid 1px;
   border-radius: 8px;
   background-color: #fff;
@@ -258,34 +258,34 @@ main {
   border-top-right-radius: 5rem;
   display: grid;
   grid-template-rows: auto;
-  gap: 12px;
+  gap: 0.75em;
 }
 
 .about-desc {
-  padding: 114px 24px 0 24px;
+  padding: 7.12em 1.5em 0 1.5em;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75em;
   align-items: flex-start;
 }
 
 .about-desc h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
   color: #172b4d;
 }
 
 .about-desc p {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: #344563;
 }
 
 .about-skills {
   width: 100%;
-  padding: 24px 36px 114px 36px;
+  padding: 1.5em 2.25em 7.12em 2.25em;
 }
 
 .about-skills ul {
@@ -295,16 +295,16 @@ main {
 .lang {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 36px;
+  gap: 0.75em;
+  margin-bottom: 2.25em;
 }
 
 .brd-r {
-  padding-right: 40px;
+  padding-right: 2.5em;
 }
 
 #disabled {
-  margin-top: 36px;
+  margin-top: 2.25em;
   margin-bottom: 0;
   visibility: hidden;
 }
@@ -314,7 +314,7 @@ main {
   width: 100%;
   height: 1px;
   border: none;
-  margin: 24px 0;
+  margin: 1.5em 0;
 }
 
 .languages {
@@ -323,9 +323,9 @@ main {
 }
 
 .languages span {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: black;
 }
 
@@ -333,15 +333,15 @@ main {
   display: flex;
   align-items: center;
   background: #f7f7f9;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   justify-content: flex-start;
-  padding: 9px 0 9px 12px;
+  padding: 0.56em 0 0.56em 0.75em;
 }
 
 .lng-item span {
-  font-size: 15px;
+  font-size: 0.93em;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #253858;
 }
 
@@ -354,13 +354,13 @@ main {
 .form-container {
   background-color: #6070ff;
   background-image: url(image/bg-contat-form.png);
-  background-position: 153px 21px;
+  background-position: 9.56em 1.31em;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 24px 8px 24px;
+  padding: 0 1.5em 0.5em 1.5em;
 }
 
 .contact-center {
@@ -369,23 +369,23 @@ main {
 
 .form-container h2 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5em;
+  line-height: 3.25rem;
   color: #fff;
-  padding-top: 103px;
+  padding-top: 6.43em;
 }
 
 .form-container p {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25em;
+  line-height: 1.75rem;
   color: #ebebff;
-  margin-top: 12px;
+  margin-top: 0.75em;
 }
 
 #input-form {
   display: inline-block;
-  margin-top: 47px;
+  margin-top: 2.93em;
   text-align: left;
 }
 
@@ -393,13 +393,13 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 15px 38px 15px 16px;
-  border-radius: 8px;
-  font-size: 17px;
+  padding: 0.93em 2.37em 0.93em 1em;
+  border-radius: 0.5rem;
+  font-size: 1.06em;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   border: 1px solid #cfd8dc;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .in-txt:hover {
@@ -407,24 +407,24 @@ main {
 }
 
 .area {
-  height: 170px;
+  height: 10.62em;
 }
 
 .endline {
   background-color: #0d151e;
-  width: 134px;
-  height: 5px;
-  border-radius: 10px;
+  width: 8.37em;
+  height: 0.31em;
+  border-radius: 0.62rem;
   border: none;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 2em;
 }
 
 @media screen and (min-width: 768px) {
   .my-header {
     max-width: 80%;
     align-items: center;
-    padding: 26px 35px 26px 24px;
+    padding: 1.62em 2.18em 1.62em 1.5em;
   }
 
   .menu {
@@ -437,11 +437,11 @@ main {
 
   .menu-op {
     display: flex;
-    gap: 32px;
+    gap: 2em;
   }
 
   main {
-    gap: 142px;
+    gap: 8.87em;
   }
 
   .page1 {
@@ -452,22 +452,22 @@ main {
 
   .pg1-container {
     width: 55%;
-    max-width: 920px;
+    max-width: 57.5em;
     margin: 0 auto;
-    padding-bottom: 255px;
+    padding-bottom: 15.93em;
     height: auto;
   }
 
   .works {
-    gap: 142px;
+    gap: 8.87em;
     justify-items: center;
   }
 
   .works1 {
     width: 80%;
     flex-direction: row;
-    gap: 46px;
-    padding: 24px;
+    gap: 2.87em;
+    padding: 1.5em;
   }
 
   .reverse {
@@ -484,62 +484,62 @@ main {
   }
 
   .work-desc h2 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 2.5em;
+    line-height: 3.25rem;
   }
 
   .work-desc p {
     padding-top: 0;
-    padding-bottom: 24px;
-    font-size: 16px;
+    padding-bottom: 1.5em;
+    font-size: 1em;
   }
 
   .small-button {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
   }
 
   .sub-box {
-    padding-top: 20px;
+    padding-top: 1.25em;
   }
 
   .sub-box h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.12em;
+    line-height: 1.5rem;
     font-weight: 500;
   }
 
   .sub-box ul li {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 1.5rem;
     font-weight: 400;
   }
 
   .about-myself {
     grid-template-columns: 1fr 1fr;
-    gap: 37px;
-    padding-bottom: 134px;
+    gap: 2.31em;
+    padding-bottom: 8.37em;
   }
 
   .about-desc {
-    padding: 142px 0 0 142px;
+    padding: 8.87em 0 0 8.87em;
   }
 
   .about-skills {
-    padding: 142px 142px 0 0;
+    padding: 8.87em 8.87em 0 0;
   }
 
   .lang {
     flex-direction: row;
-    gap: 12px;
+    gap: 0.75em;
   }
 
   .lng-item {
     flex-direction: column;
-    padding: 12px 12px 20px 12px;
-    gap: 16px;
+    padding: 0.75em 0.75em 1.25em 0.75em;
+    gap: 1em;
     align-items: start;
-    width: 122px;
-    height: 120px;
+    width: 7.62em;
+    height: 7.5em;
   }
 
   .lng-item img {
@@ -550,15 +550,15 @@ main {
 
   .form-container {
     background-image: url(image/bg-contact-form-big.png);
-    background-position: 75px 80px;
+    background-position: 4.68em 5em;
     background-size: 100%;
   }
 
   .contact-center {
     margin: 0 auto;
-    max-width: 800px;
-    margin-bottom: 127px;
-    margin-top: 142px;
+    max-width: 50em;
+    margin-bottom: 7.93em;
+    margin-top: 8.87em;
   }
 
   .form-container h2 {
@@ -566,16 +566,16 @@ main {
   }
 
   .form-container p {
-    padding: 0 116px;
+    padding: 0 7.25em;
   }
 
   #input-form {
-    margin-top: 12px;
+    margin-top: 0.75em;
   }
 
   .in-txt {
-    margin-bottom: 27px;
-    border-radius: 2px;
+    margin-bottom: 1.68em;
+    border-radius: 0.12em;
   }
 
   .endline {
