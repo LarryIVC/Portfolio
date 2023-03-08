@@ -118,6 +118,13 @@ Example command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
+👤 ** Stenli Suryadinata **
+
+- GitHub: [@stenlisuryadinata](https://github.com/stenlisuryadinata)
+- Twitter: [@stenlisurya](https://twitter.com/stenlisurya)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stenli-suryadinata-31972a43/)
+- Medium: [Medium](https://medium.com/@stenlisuryadinata)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/LarryIVC/portfolio/issues).
