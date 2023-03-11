@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Walkthrough to the Portfolio Project](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -47,9 +48,10 @@
   
 ### Key Features <a name="key-features"></a>
 
-- **Enlist skill sets and tech stack**
+**Enlist skill sets and tech stack**
 - **Responsive design**
 - **Mobile First methodology**
+- **Walkthrough to the [Portfolio Project](https://www.loom.com/share/f2fdbd7445c8471990b5c3deda36544e)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
