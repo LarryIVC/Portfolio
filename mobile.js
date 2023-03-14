@@ -8,13 +8,6 @@ const liPortfolio = document.getElementById('li-portfolio');
 const liAbout = document.getElementById('li-about');
 const liContact = document.getElementById('li-contact');
 
-modalOpen.addEventListener('click', openModal);
-modalClose.addEventListener('click', closeModal);
-
-liPortfolio.addEventListener('click', closeModal);
-liAbout.addEventListener('click', closeModal);
-liContact.addEventListener('click', closeModal);
-
 function openModal() {
   blurContainer.classList.add('blurize');
   mainContainer.classList.add('blurize');
@@ -26,3 +19,10 @@ function closeModal() {
   mainContainer.classList.remove('blurize');
   blurContainer.classList.remove('blurize');
 }
+
+modalOpen.addEventListener('click', openModal);
+modalClose.addEventListener('click', closeModal);
+
+liPortfolio.addEventListener('click', closeModal);
+liAbout.addEventListener('click', closeModal);
+liContact.addEventListener('click', closeModal);
