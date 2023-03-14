@@ -14,7 +14,7 @@ function openModal() {
   modalContainer.classList.add('turn_on');
 }
 
-function closeModal() { 
+function closeModal() {
   modalContainer.classList.remove('turn_on');
   mainContainer.classList.remove('blurize');
   blurContainer.classList.remove('blurize');
