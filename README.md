@@ -120,12 +120,11 @@ Example command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-👤 ** Stenli Suryadinata **
+👤 ** Carlos Igreda **
 
-- GitHub: [@stenlisuryadinata](https://github.com/stenlisuryadinata)
-- Twitter: [@stenlisurya](https://twitter.com/stenlisurya)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stenli-suryadinata-31972a43/)
-- Medium: [Medium](https://medium.com/@stenlisuryadinata)
+- GitHub: [@CarlosIgreda](https://github.com/CarlosIgreda)
+- Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
+- LinkedIn: [carlos-jesús-igreda-rivas-323763116](https://www.linkedin.com/in/carlos-jes%C3%BAs-igreda-rivas-323763116/)
 
 Contributions, issues, and feature requests are welcome!
 
