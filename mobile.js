@@ -8,22 +8,21 @@ const liPortfolio = document.getElementById('li-portfolio');
 const liAbout = document.getElementById('li-about');
 const liContact = document.getElementById('li-contact');
 
-modalOpen.addEventListener('click',open_modal);
-modalClose.addEventListener('click',close_modal);
+modalOpen.addEventListener('click', openModal);
+modalClose.addEventListener('click', closeModal);
 
-liPortfolio.addEventListener('click',close_modal);
-liAbout.addEventListener('click',close_modal);
-liContact.addEventListener('click',close_modal);
+liPortfolio.addEventListener('click', closeModal);
+liAbout.addEventListener('click', closeModal);
+liContact.addEventListener('click', closeModal);
 
-function open_modal() {
+function openModal() {
   blurContainer.classList.add('blurize');
   mainContainer.classList.add('blurize');
-  modalContainer.classList.add('turn_on');  
+  modalContainer.classList.add('turn_on');
 }
 
-function close_modal() {  
+function closeModal() { 
   modalContainer.classList.remove('turn_on');
   mainContainer.classList.remove('blurize');
   blurContainer.classList.remove('blurize');
 }
-
