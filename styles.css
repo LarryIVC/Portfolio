@@ -13,21 +13,20 @@ body {
 
 #container-menu-modal {
   display: flex;
-  background-color: rgba(96, 112, 255,1);
-  position: fixed;  
+  background-color: rgba(96, 112, 255, 1);
+  position: fixed;
   pointer-events: none;
   opacity: 0;
   top: 0;
-  left: 0;  
+  left: 0;
   width: 100vw;
   height: 100vh;
 }
 
 .turn_on {
-  /* display: flex !important; */
   opacity: 1 !important;
   pointer-events: auto !important;
-  background-color: rgba(96, 112, 255,.8) !important;
+  background-color: rgba(96, 112, 255, 0.8) !important;
   animation-duration: 1s;
   animation-name: slidein;
 }
@@ -35,7 +34,7 @@ body {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%
+    width: 300%;
   }
 
   to {
@@ -45,7 +44,6 @@ body {
 }
 
 #modal {
-
   width: 100%;
   height: auto;
   padding: 0 28px;
@@ -76,8 +74,7 @@ body {
   margin-bottom: 40px;
   font-size: 32px;
   font-weight: 600;
-  line-height: 44px;  
-  
+  line-height: 44px;
 }
 
 .modal-item a {
@@ -113,7 +110,7 @@ header {
   font-weight: 700;
   font-size: 1.12em;
   line-height: 1.25rem;
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
   transform: rotate(360deg);
   transition-duration: 3s;
