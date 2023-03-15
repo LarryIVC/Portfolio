@@ -20,7 +20,7 @@ const navigationLinks = document.querySelectorAll('.modal-item');
 
 navigationLinks.forEach((link) => {
   link.addEventListener('click', closeModal);
-})
+});
 
 modalOpen.addEventListener('click', openModal);
 modalClose.addEventListener('click', closeModal);
