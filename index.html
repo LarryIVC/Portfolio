@@ -11,23 +11,23 @@
     <title>Larry Villergas Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id ="first-container">
         <div class="my-header">
             <a class="logo" href="index.html">Larry Villegas</a>
             <nav class="menu">
                 <ul class="menu-op">
-                    <li class="item"><a href="#">Portfolio</a></li>
-                    <li class="item"><a href="#">About</a></li>
-                    <li class="item"><a href="#">Contact</a></li>
+                    <li class="item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-box">                
-                    <a href="#"><img src="image/menu.png" alt="Mobile Button"></a>
+                    <img id="open-modal" src="image/menu.png" alt="Mobile Button">
                 </div>
             </nav>
         </div>
     </header>
-    <main>
-        <div class="page1">
+    <main id="main">
+        <div class="page1">            
             <div class="pg1-container">
                 <h1>I'm Larry<br>Glad to see you!</h1>
                 <p class="text">I’m a software developer! 
@@ -48,7 +48,7 @@
         <!-- seccion de trabajos         -->
         <section class="works" name="works">
             <!-- trabajo 1 -->
-            <div class="works1">
+            <div class="works1" id="portfolio">
                 <img src="image/works1-big.png" alt="Avocode Snapshoot">                    
                 <div class="work-desc">
                     <h2>Tonic</h2>
@@ -135,7 +135,7 @@
             </div>
         </section>
         <!-- Seccion about -->
-        <section name="about-myself" class="about-myself">
+        <section name="about-myself" class="about-myself" id="about">
             <div class="about-desc">
                 <h2>About <br>Myself</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -186,7 +186,7 @@
         </section>
     </main> 
     <section class="contact-form">
-        <div class="form-container">
+        <div class="form-container" id="contact">
             <div class="contact-center">
                 <h2>Contact me</h2>
                 <p>If you have an application you are interested in 
@@ -202,6 +202,25 @@
                 <hr class="endline">
             </div>
         </div>
-    </section>       
+    </section>   
+    <!-- insert mobile modal container-->
+    <div id="container-menu-modal">
+        <div id="modal">
+            <div id="menu-head">
+                <img id="btn-close"src="image/btn-x.png" alt="close button">
+            </div>
+            <div>
+                <ul id="modal-ul">
+                    <li  class="modal-item"><a href="#portfolio">Portfolio</a></li>
+                    <li  class="modal-item"><a href="#about">About</a></li>
+                    <li  class="modal-item"><a href="#contact">Contact</a></li>
+                </ul>                
+            </div>
+            <hr class="endline">
+        </div>
+    </div>
+    <!-- end modal -->
+    
+    <script src="mobile.js"></script>    
 </body>
 </html>

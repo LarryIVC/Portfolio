@@ -9,8 +9,92 @@ body {
   font-size: 16px;
 }
 
+/* Modal */
+
+#container-menu-modal {
+  display: flex;
+  background-color: rgba(96, 112, 255, 1);
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.turn_on {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  background-color: rgba(96, 112, 255, 0.8) !important;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#modal {
+  width: 100%;
+  height: auto;
+  padding: 0 28px;
+}
+
+#menu-head {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+#btn-close {
+  padding-top: 1.87rem;
+}
+
+#btn-close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  animation-duration: 300ms;
+}
+
+#modal-ul {
+  list-style: none;
+  margin-bottom: 20rem;
+}
+
+.modal-item {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.modal-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-item:hover {
+  transform: scale(0.9);
+  animation-duration: 300ms;
+}
+
+/* fin modal */
+
 header {
   background: #fff;
+}
+
+.blurize {
+  filter: blur(5px);
 }
 
 .my-header {
@@ -26,7 +110,7 @@ header {
   font-weight: 700;
   font-size: 1.12em;
   line-height: 1.25rem;
-  color: #272e6f;
+  color: #6070ff;
   text-decoration: none;
   transform: rotate(360deg);
   transition-duration: 3s;
@@ -56,8 +140,9 @@ header {
   transform: scale(1.1);
 }
 
-.menu-box a img:hover {
+#open-modal:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .menu-op {
@@ -416,7 +501,7 @@ main {
   height: 0.31em;
   border-radius: 0.62rem;
   border: none;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 2em;
 }
 
