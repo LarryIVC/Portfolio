@@ -4,10 +4,6 @@ const modalClose = document.getElementById('btn-close');
 const blurContainer = document.getElementById('first-container');
 const mainContainer = document.getElementById('main');
 
-const liPortfolio = document.getElementById('li-portfolio');
-const liAbout = document.getElementById('li-about');
-const liContact = document.getElementById('li-contact');
-
 function openModal() {
   blurContainer.classList.add('blurize');
   mainContainer.classList.add('blurize');
@@ -20,9 +16,11 @@ function closeModal() {
   blurContainer.classList.remove('blurize');
 }
 
+const navigationLinks = document.querySelectorAll('.modal-item');
+
+navigationLinks.forEach((link) => {
+  link.addEventListener('click', closeModal);
+})
+
 modalOpen.addEventListener('click', openModal);
 modalClose.addEventListener('click', closeModal);
-
-liPortfolio.addEventListener('click', closeModal);
-liAbout.addEventListener('click', closeModal);
-liContact.addEventListener('click', closeModal);
