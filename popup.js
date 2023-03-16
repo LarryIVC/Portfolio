@@ -37,7 +37,7 @@ const works = [
 const openPopup = document.querySelectorAll('.btn-work');
 const popupContainer = document.querySelector('.popup-principal');
 
-for (let pointer = 0; pointer < works.length; pointer ++) {
+for (let pointer = 0; pointer < works.length; pointer += 1) {
   openPopup[pointer].addEventListener('click', () => {
     const htmlContent = `<div class="popup-details">
           <div class="popup-image">
@@ -79,7 +79,6 @@ for (let pointer = 0; pointer < works.length; pointer ++) {
     popupContainer.classList.add('popup-show');
     firstContainer.classList.add('blurize');
     mainPopup.classList.add('blurize');
-    
 
     closePopup.addEventListener('click', () => {
       popupContainer.classList.remove('popup-show');
