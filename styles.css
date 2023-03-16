@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -507,13 +507,13 @@ main {
 
 /* popup */
 
-.popup-principal{
+.popup-principal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(193, 199, 208,.7);
+  background-color: rgba(193, 199, 208, 0.7);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -522,7 +522,7 @@ main {
   visibility: hidden;
 }
 
-.popup-show{
+.popup-show {
   visibility: visible;
 }
 
@@ -532,17 +532,20 @@ main {
   max-width: 343px;
   max-height: 713px;
   height: auto;
-  border: #DFE1E6 solid 1px;
+  border: #dfe1e6 solid 1px;
   border-radius: 10px;
-  box-shadow: 0 0 3px 2px rgba(0, 0, 0, .2);  
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
   padding: 16px;
+
   /* transform: scale(0.6); */
+
   /* opacity: 0; */
+
   /* transition: .3s ease all; */
 }
 
 .popup-image {
-  position: relative;  
+  position: relative;
 }
 
 #popup-close {
@@ -552,7 +555,7 @@ main {
   cursor: pointer;
 }
 
-.img-snapshot{
+.img-snapshot {
   width: 100%;
   height: 220px;
   margin: 0 auto;
@@ -567,32 +570,30 @@ main {
   margin-bottom: 16px;
 }
 
-.btn-live, .btn-code {
+.btn-live,
+.btn-code {
   display: flex;
   gap: 14px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
-.popup-line{
+.popup-line {
   height: 1px;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
   border: none;
   margin: 25px 0;
 }
-
 
 .action {
   display: flex;
   gap: 14px;
   align-items: center;
   justify-content: center;
-  
-  /* margin-top: 45px; */
 }
 
 /* end popup mobile */
-
 
 @media screen and (min-width: 768px) {
   .my-header {
@@ -670,10 +671,6 @@ main {
 
   .small-button {
     margin-bottom: 2.5em;
-  }
-
-  .sub-box {
-    padding-top: 1.25em;
   }
 
   .sub-box h3 {
@@ -772,10 +769,10 @@ main {
     padding-top: 0;
   }
 
-  .img-snapshot{
+  .img-snapshot {
     width: 100%;
     height: 320px;
-    display:flex ;
+    display: flex;
     align-items: center;
   }
 
@@ -784,7 +781,7 @@ main {
     gap: 36px;
   }
 
-  .popup-text{
+  .popup-text {
     width: 60%;
     overflow: hidden;
     height: 50%;
@@ -796,8 +793,7 @@ main {
     height: 50%;
   }
 
-  .popup-line{
+  .popup-line {
     margin: 10px 0;
   }
-
 }
