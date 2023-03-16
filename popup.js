@@ -1,3 +1,5 @@
+import mobile from './mobile.js';
+
 const works = [
   {
     name: 'Tonic',
@@ -11,7 +13,7 @@ const works = [
     name: 'Multi-Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     image: 'image/works2.png',
-    technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
     linkCode: 'https://github.com/LarryIVC/portfolio',
   },
@@ -19,7 +21,7 @@ const works = [
     name: 'Facebook 360',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     image: 'image/works3.png',
-    technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
     linkCode: 'https://github.com/LarryIVC/portfolio',
   },
@@ -27,20 +29,19 @@ const works = [
     name: 'Uber Navigation',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     image: 'image/works4.png',
-    technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
     linkCode: 'https://github.com/LarryIVC/portfolio',
 
-  }
+  },
 ];
 
 const openPopup = document.querySelectorAll('.btn-work');
 const popupContainer = document.querySelector('.popup-principal');
 
-for (let pointer = 0; pointer < works.length; pointer++ ){
-
+for (let pointer = 0; pointer < works.length; pointer += 1) {
   openPopup[pointer].addEventListener('click', () => {
-    let htmlContent = `<div class="popup-details">
+    const htmlContent = `<div class="popup-details">
           <div class="popup-image">
             <img id="popup-close" src="../image/btn-x1.svg" alt="Close button">
             <h2 class="title-works">${works[pointer].name}</h2>
@@ -71,23 +72,17 @@ for (let pointer = 0; pointer < works.length; pointer++ ){
             </div>
           </div>
         </div>`;
-    popupContainer.innerHTML=htmlContent;
-    
-    const closePopup =document.getElementById('popup-close');
+    popupContainer.innerHTML = htmlContent;
+
+    const closePopup = document.getElementById('popup-close');
     popupContainer.classList.add('popup-show');
-    blurContainer.classList.add('blurize');
-    mainContainer.classList.add('blurize');
+    mobile.blurContainer.classList.add('blurize');
+    mobile.mainContainer.classList.add('blurize');
 
     closePopup.addEventListener('click', () => {
       popupContainer.classList.remove('popup-show');
-      blurContainer.classList.remove('blurize');
-      mainContainer.classList.remove('blurize');
-      
+      mobile.blurContainer.classList.remove('blurize');
+      mobile.mainContainer.classList.remove('blurize');
     });
-    
   });
-  
 }
-
-
-
