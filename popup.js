@@ -41,7 +41,7 @@ for (let pointer = 0; pointer < works.length; pointer += 1) {
   openPopup[pointer].addEventListener('click', () => {
     const htmlContent = `<div class="popup-details">
           <div class="popup-image">
-            <img id="popup-close" src="../image/btn-x1.svg" alt="Close button">
+            <img id="popup-close" src="image/btn-x1.svg" alt="Close button">
             <h2 class="title-works">${works[pointer].name}</h2>
             <div class="sub-box">
               <h3>CANOPY</h3>
