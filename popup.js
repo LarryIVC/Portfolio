@@ -1,5 +1,3 @@
-// import mobile from './mobile.js';
-
 const works = [
   {
     name: 'Tonic',
@@ -75,15 +73,18 @@ for (let pointer = 0; pointer < works.length; pointer ++) {
     popupContainer.innerHTML = htmlContent;
 
     const closePopup = document.getElementById('popup-close');
+    const firstContainer = document.getElementById('first-container');
+    const mainPopup = document.getElementById('main');
+
     popupContainer.classList.add('popup-show');
-    blurContainer.classList.add('blurize');
-    mainContainer.classList.add('blurize');
+    firstContainer.classList.add('blurize');
+    mainPopup.classList.add('blurize');
     
 
     closePopup.addEventListener('click', () => {
       popupContainer.classList.remove('popup-show');
-      blurContainer.classList.remove('blurize');
-      mainContainer.classList.remove('blurize');
+      firstContainer.classList.remove('blurize');
+      mainPopup.classList.remove('blurize');
     });
   });
 }
