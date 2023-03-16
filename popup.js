@@ -1,4 +1,4 @@
-import mobile from './mobile.js';
+// import mobile from './mobile.js';
 
 const works = [
   {
@@ -39,7 +39,7 @@ const works = [
 const openPopup = document.querySelectorAll('.btn-work');
 const popupContainer = document.querySelector('.popup-principal');
 
-for (let pointer = 0; pointer < works.length; pointer += 1) {
+for (let pointer = 0; pointer < works.length; pointer ++) {
   openPopup[pointer].addEventListener('click', () => {
     const htmlContent = `<div class="popup-details">
           <div class="popup-image">
@@ -76,13 +76,14 @@ for (let pointer = 0; pointer < works.length; pointer += 1) {
 
     const closePopup = document.getElementById('popup-close');
     popupContainer.classList.add('popup-show');
-    mobile.blurContainer.classList.add('blurize');
-    mobile.mainContainer.classList.add('blurize');
+    blurContainer.classList.add('blurize');
+    mainContainer.classList.add('blurize');
+    
 
     closePopup.addEventListener('click', () => {
       popupContainer.classList.remove('popup-show');
-      mobile.blurContainer.classList.remove('blurize');
-      mobile.mainContainer.classList.remove('blurize');
+      blurContainer.classList.remove('blurize');
+      mainContainer.classList.remove('blurize');
     });
   });
 }
