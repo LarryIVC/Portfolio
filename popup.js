@@ -5,7 +5,7 @@ const works = [
     image: 'image/works1-big.png',
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio'
+    linkCode: 'https://github.com/LarryIVC/portfolio',
   },
   {
     name: 'Multi-Post Stories',
@@ -13,7 +13,7 @@ const works = [
     image: 'image/works2.png',
     technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio'
+    linkCode: 'https://github.com/LarryIVC/portfolio',
   },
   {
     name: 'Facebook 360',
@@ -21,7 +21,7 @@ const works = [
     image: 'image/works3.png',
     technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio'
+    linkCode: 'https://github.com/LarryIVC/portfolio',
   },
   {
     name: 'Uber Navigation',
@@ -29,7 +29,7 @@ const works = [
     image: 'image/works4.png',
     technologies: ['html', 'Ruby on rails','css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio'
+    linkCode: 'https://github.com/LarryIVC/portfolio',
 
   }
 ];
@@ -37,8 +37,7 @@ const works = [
 const openPopup = document.querySelectorAll('.btn-work');
 const popupContainer = document.querySelector('.popup-principal');
 
-
-for (let pointer=0; pointer<works.length;pointer++){
+for (let pointer = 0; pointer < works.length; pointer++ ){
 
   openPopup[pointer].addEventListener('click', () => {
     let htmlContent = `<div class="popup-details">
