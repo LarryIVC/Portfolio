@@ -37,6 +37,7 @@ const works = [
 const openPopup = document.querySelectorAll('.btn-work');
 const popupContainer = document.querySelector('.popup-principal');
 
+
 for (let pointer=0; pointer<works.length;pointer++){
 
   openPopup[pointer].addEventListener('click', () => {
@@ -72,12 +73,17 @@ for (let pointer=0; pointer<works.length;pointer++){
           </div>
         </div>`;
     popupContainer.innerHTML=htmlContent;
-
+    
     const closePopup =document.getElementById('popup-close');
     popupContainer.classList.add('popup-show');
+    blurContainer.classList.add('blurize');
+    mainContainer.classList.add('blurize');
 
     closePopup.addEventListener('click', () => {
       popupContainer.classList.remove('popup-show');
+      blurContainer.classList.remove('blurize');
+      mainContainer.classList.remove('blurize');
+      
     });
     
   });
