@@ -1,2 +1,4 @@
 # .gitignore
 node_modules/
+pruebas/
+.eslintrc.js
