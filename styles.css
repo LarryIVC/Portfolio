@@ -136,10 +136,6 @@ header {
   transition-duration: 300ms;
 }
 
-.img-works:hover {
-  transform: scale(1.04);
-}
-
 #open-modal:hover {
   transform: scale(1.2);
   cursor: pointer;
@@ -240,7 +236,6 @@ main {
   align-items: center;
   max-width: 550px;
   width: 100%;
-  
 }
 
 .div-img {
@@ -255,9 +250,12 @@ main {
   transition-duration: 300ms;
 }
 
+.img-works:hover {
+  transform: scale(1.04);
+}
+
 .work-desc {
   padding-bottom: 0.5em;
-  
 }
 
 .title-works {
@@ -275,12 +273,11 @@ main {
   line-height: 1rem;
   letter-spacing: 3%;
   margin-bottom: 1.5em;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .small-button li {
   padding: 0.25em 0.75em;
-  
   border-radius: 0.5em;
   background-color: #ebebff;
   color: #6070ff;
