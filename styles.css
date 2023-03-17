@@ -509,6 +509,30 @@ main {
   height: 10.62em;
 }
 
+.btnContainer {
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#error {
+  width: 60%;
+  font-size: .9em;
+  line-height: 1.2em;
+  color: white;
+  background-color: red;
+  padding: 5px;
+  border-radius: 0.81rem;
+  visibility: hidden;
+}
+
+.error-show {
+  visibility: visible !important;
+}
+
 .endline {
   background-color: #0d151e;
   width: 8.37em;
