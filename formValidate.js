@@ -9,14 +9,12 @@ function isNotLower(arg){
 };
 
 myForm.addEventListener('submit', (event) => {
-  // alert(myForm.elements['email'].value);
   event.preventDefault();
   const msgError = document.getElementById('error');
 
   if(isNotLower(myForm.elements['email'].value)){
     let myMessage= `You must write the email in lowercase eg.(mymail@mydomain.ref)`;
     msgError.innerHTML = myMessage;
-    // msgError.innerHTML = myMessage;
     msgError.classList.add('error-show');
     
   } else {
