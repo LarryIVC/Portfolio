@@ -2,7 +2,7 @@ const works = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    smalldesc:'Exploring the future of media in Facebook`\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    smalldesc: 'Exploring the future of media in Facebook`\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     image: 'image/works1-big.png',
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
@@ -11,7 +11,7 @@ const works = [
   {
     name: 'Multi-Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    smalldesc:'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    smalldesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     image: 'image/works2.png',
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
@@ -39,11 +39,11 @@ const works = [
 ];
 // cards
 const worksContainer = document.querySelector('.works');
-let cardWorks =``;
+let cardWorks = '';
 works.forEach((datos, index) => {
-  cardWorks  += `<div class="works1 `;  
-  if(index % 2 !== 0){
-    cardWorks += `reverse`;
+  cardWorks += '<div class="works1 ';
+  if (index % 2 !== 0) {
+    cardWorks += 'reverse';
   }
   cardWorks += `" id="portfolio">
 <div class="div-img">
@@ -61,16 +61,16 @@ works.forEach((datos, index) => {
     <p class="des-p">${datos.smalldesc}</p>
     <ul class="small-button">`;
 
-    for(let label=0;label<datos.technologies.length; label +=1){
-      cardWorks += `<li>${datos.technologies[label]}</li>`;
-    }
-    cardWorks += `</ul>
+  for (let label = 0; label < datos.technologies.length; label += 1) {
+    cardWorks += `<li>${datos.technologies[label]}</li>`;
+  }
+  cardWorks += `</ul>
     <button type="button" class="see-button btn-work">See Project</button>
 </div>
 </div>`;
 });
 
-worksContainer.innerHTML= cardWorks;
+worksContainer.innerHTML = cardWorks;
 // end cards
 
 const openPopup = document.querySelectorAll('.btn-work');
@@ -97,9 +97,8 @@ for (let pointer = 0; pointer < works.length; pointer += 1) {
             </div>
             <div class="popup-footer">
               <ul class="small-button">`;
-              
 
-    for(let popupLabel=0; popupLabel < works[pointer].technologies.length; popupLabel += 1) {
+    for (let popupLabel = 0; popupLabel < works[pointer].technologies.length; popupLabel += 1) {
       htmlContent += `<li>${works[pointer].technologies[popupLabel]}</li>`;
     }
 
@@ -113,7 +112,7 @@ for (let pointer = 0; pointer < works.length; pointer += 1) {
             </div>
           </div>
         </div>`;
-        
+
     popupContainer.innerHTML = htmlContent;
 
     const closePopup = document.getElementById('popup-close');
