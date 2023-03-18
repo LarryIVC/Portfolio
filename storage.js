@@ -1,3 +1,5 @@
+//Developed by Larry Villegas and Carlos Igreda
+
 const form = document.getElementById('input-form');
 const name = document.querySelector('.user_name');
 
@@ -38,23 +40,6 @@ if (storageAvailable('localStorage')) {
 
     localStorage.setItem('formObject', JSON.stringify(formObject));
   };
-
-//  *********************
-if (storageAvailable('localStorage')) {
-  const setFormData = () => {
-    const formObject = {
-      name: form.user_name.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
-
-    localStorage.setItem('formObject', JSON.stringify(formObject));
-  };
-
-
-// *********************
-
-
   
   form.user_name.addEventListener('change', setFormData);
   form.email.addEventListener('change', setFormData);
