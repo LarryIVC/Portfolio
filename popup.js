@@ -33,7 +33,7 @@ const works = [
     image: 'image/works4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio',    
+    linkCode: 'https://github.com/LarryIVC/portfolio',
   },
 ];
 // cards
