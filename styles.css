@@ -266,14 +266,15 @@ main {
 }
 
 .small-button {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   list-style: none;
   font-size: 0.75em;
   font-weight: 500;
   line-height: 1rem;
   letter-spacing: 3%;
   margin-bottom: 1.5em;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .small-button li {
@@ -594,10 +595,11 @@ main {
 }
 
 .img-snapshot {
-  width: 100%;
+  width: auto;
   height: 220px;
   margin: 0 auto;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  border-radius: 4px;
 }
 
 .popup-txt {
@@ -716,6 +718,8 @@ main {
   }
 
   .small-button {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin-bottom: 2.5em;
   }
 
@@ -816,10 +820,11 @@ main {
   }
 
   .img-snapshot {
-    width: 100%;
-    height: 320px;
+    width: auto;
+    height: 270px;
     display: flex;
     align-items: center;
+    border-radius: 15px;
   }
 
   .popup-desc {

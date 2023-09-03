@@ -1,12 +1,12 @@
 const works = [
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    smalldesc: 'Exploring the future of media in Facebook`\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    image: 'image/works1-big.png',
-    technologies: ['html', 'css', 'JavaScript'],
-    linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio',
+    name: 'Pennywise',
+    description: 'Pennywise: Manage your finances with ease. Track spending, set budgets, gain insights, and make informed decisions for financial freedom. Start today!',
+    smalldesc: 'Manage your finances with ease, spendigs and budgets',
+    image: 'image/pennywise.webp',
+    technologies: ['erb', 'CSS', 'JavaScript', 'Ruby', 'Ruby on rails', 'PostgreSQL'],
+    linkLive: 'https://rails-lb6q.onrender.com/',
+    linkCode: 'https://github.com/LarryIVC/pennywise',
   },
   {
     name: 'Multi-Post Stories',
@@ -33,8 +33,7 @@ const works = [
     image: 'image/works4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
     linkLive: 'https://larryivc.github.io/portfolio/',
-    linkCode: 'https://github.com/LarryIVC/portfolio',
-
+    linkCode: 'https://github.com/LarryIVC/portfolio',    
   },
 ];
 // cards
@@ -55,7 +54,7 @@ works.forEach((datos, index) => {
         <h3>CANOPY</h3>
         <ul>
             <li>Back End Dev</li>
-            <li>2015</li>
+            <li>2023</li>
         </ul>                        
     </div>
     <p class="des-p">${datos.smalldesc}</p>
