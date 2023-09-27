@@ -199,7 +199,7 @@ main {
   line-height: 3.25rem;
   color: #172b4d;
 }
-
+/* stylelint-disable */
 .page1 p {
   font-weight: 400;
   font-size: 1em;
@@ -207,7 +207,7 @@ main {
   color: #344563;
   text-wrap: wrap;
 }
-
+/* stylelint-enable */
 .sub-txt {
   font-weight: 500;
   font-size: 1em;
