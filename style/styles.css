@@ -449,12 +449,20 @@ main {
   padding: 0.56em 0 0.56em 0.75em;
 }
 
+.lng-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+}
+
 .lng-item span {
   font-size: 0.93em;
   font-weight: 500;
   line-height: 1.25rem;
   color: #253858;
 }
+
+
 
 /* contact form  */
 

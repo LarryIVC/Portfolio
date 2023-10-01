@@ -1,4 +1,4 @@
-[
+const works = [
   {
     name: 'Pennywise',
     description: 'Pennywise: Manage your finances with ease. Track spending, set budgets, gain insights, and make informed decisions for financial freedom. Start today!',
@@ -7,6 +7,8 @@
     technologies: ['erb', 'CSS', 'JavaScript', 'Ruby', 'Ruby on rails', 'PostgreSQL'],
     linkLive: 'https://rails-lb6q.onrender.com/',
     linkCode: 'https://github.com/LarryIVC/pennywise',
+    canopy: 'Back End Dev',
+    year: '2023',
   },
   {
     name: 'Fast Land Racers',
@@ -16,6 +18,8 @@
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript', 'PostgreSQL', 'React', 'Redux'],
     linkLive: 'https://shiny-longma-bba6fb.netlify.app',
     linkCode: 'https://github.com/LarryIVC/Fast-Lane-Racers-front-end',
+    canopy: 'Front End & Back End Dev',
+    year: '2023',
   },
   {
     name: 'Crypto Coinranking',
@@ -25,6 +29,8 @@
     technologies: ['html', 'css', 'JavaScript', 'React', 'Redux'],
     linkLive: 'https://react-coin-coinranking.netlify.app/',
     linkCode: 'https://github.com/LarryIVC/react-coins',
+    canopy: 'Front End Dev',
+    year: '2023',
   },
   {
     name: 'The Simpsons Fans Club',
@@ -34,5 +40,9 @@
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: 'https://js-capstoneproject.netlify.app/',
     linkCode: 'https://github.com/LarryIVC/portfolio',
+    canopy: 'Front End Dev',
+    year: '2023',
   },
-]
+];
+
+export default works;
