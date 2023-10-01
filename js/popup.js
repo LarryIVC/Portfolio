@@ -14,9 +14,9 @@ works.forEach((datos, index) => {
     <div class="work-desc">
         <h2 class="title-works">${datos.name}</h2>
         <div class="sub-box">
-            <h3>CANOPY</h3>
+            <h3>${datos.enterprise.toUpperCase()}</h3>
             <ul>
-                <li>${datos.canopy}</li>
+                <li>${datos.stack}</li>
                 <li>${datos.year}</li>
             </ul>                        
         </div>
