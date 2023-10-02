@@ -117,6 +117,8 @@ header {
   text-decoration: none;
   transform: rotate(360deg);
   transition-duration: 3s;
+  box-shadow: 0 0 2px 1px #6070ff60;
+  border-radius: 25px;
 }
 
 .logo img {
@@ -130,10 +132,6 @@ header {
 
 .lng-item img {
   margin-right: 1em;
-}
-
-.social li a img {
-  transition-duration: 300ms;
 }
 
 #open-modal:hover {
@@ -153,15 +151,10 @@ header {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
-  border: 1px solid #6070ff;
-  border-radius: 15px;
+  border: 1px solid #172b4d;
+  border-radius: 5px;
   padding: 5px 10px;
-
-  /* color: #344563; */
-}
-
-.item a:visited {
-  color: currentColor;
+  color: #172b4d;
 }
 
 .item:hover {
@@ -178,7 +171,7 @@ main {
 
 .page1 {
   width: 100%;
-  background-image: url(image/bg-header.png);
+  background-image: url(../image/bg-header.png);
   background-repeat: no-repeat;
   padding: 6.25em 1.5em 0 1.5em;
   border-bottom-left-radius: 5em;
@@ -221,6 +214,12 @@ main {
   list-style: none;
   gap: 1.25em;
   align-items: flex-end;
+}
+
+.social li a img {
+  width: 24px;
+  height: 24px;
+  transition-duration: 300ms;
 }
 
 .social li a img:hover {
@@ -303,6 +302,7 @@ main {
   display: flex;
   padding-top: 0.75em;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.75em;
 }
 
@@ -316,6 +316,9 @@ main {
 .sub-box ul {
   display: flex;
   list-style: inside;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -408,10 +411,15 @@ main {
 }
 
 .lang {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 1fr;
   gap: 0.75em;
   margin-bottom: 2.25em;
+  box-shadow: 1px 1px 4px rgb(172, 168, 168);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .brd-r {
@@ -437,10 +445,18 @@ main {
   justify-content: space-between;
 }
 
+.title-summary {
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 4px rgb(172, 168, 168);
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .languages span {
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 24px;
   color: black;
 }
 
@@ -456,13 +472,14 @@ main {
 .lng-icon {
   width: 48px;
   height: 48px;
-  border-radius: 15px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px 0 rgb(172, 168, 168);
 }
 
 .lng-item span {
-  font-size: 0.93em;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 1.25rem;
+  line-height: 20px;
   color: #253858;
 }
 
@@ -473,7 +490,7 @@ main {
 
 .form-container {
   background-color: #6070ff;
-  background-image: url(image/bg-contat-form.png);
+  background-image: url(../image/bg-contat-form.png);
   background-position: 9.56em 1.31em;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
@@ -660,7 +677,7 @@ main {
   .my-header {
     max-width: 80%;
     align-items: center;
-    padding: 1.62em 2.18em 1.62em 1.5em;
+    padding: 0.62em 2.18em 1.62em 1.5em;
   }
 
   .menu {
@@ -676,13 +693,18 @@ main {
     gap: 1rem;
   }
 
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
   main {
     gap: 8.87em;
   }
 
   .page1 {
     display: flex;
-    background-image: url(image/bg-header-big.png);
+    background-image: url(../image/bg-header-big.png);
     background-size: 100% 100%;
   }
 
@@ -745,7 +767,7 @@ main {
   }
 
   .sub-box ul li {
-    font-size: 1.125em;
+    font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
   }
@@ -765,17 +787,17 @@ main {
   }
 
   .lang {
-    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(122px, 1fr));
     gap: 0.75em;
   }
 
   .lng-item {
     flex-direction: column;
     padding: 0.75em 0.75em 1.25em 0.75em;
-    gap: 1em;
-    align-items: start;
-    width: 7.62em;
-    height: 7.5em;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
   }
 
   .lng-item img {
@@ -785,7 +807,7 @@ main {
   /* Contact Form */
 
   .form-container {
-    background-image: url(image/bg-contact-form-big.png);
+    background-image: url(../image/bg-contact-form-big.png);
     background-position: 4.68em 5em;
     background-size: 100%;
   }
