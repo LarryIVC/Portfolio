@@ -254,28 +254,31 @@ main {
 }
 
 @keyframes reveal {
-	from {
-		opacity: 0;
-		clip-path: inset(45% 20% 45% 20%);
-	}
-	to {
-		opacity: 1;
-		clip-path: inset(0% 0% 0% 0%);
-	}
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
 
+/* stylelint-disable */
 .revealing-image {
 	/* Create View Timeline */
-	view-timeline-name: --revealing-image;
-	view-timeline-axis: block;
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
 
 	/* Attach animation, linked to the  View Timeline */
-	animation: linear reveal both;
-	animation-timeline: --revealing-image;
+  animation: linear reveal both;
+  animation-timeline: --revealing-image;
 
 	/* Tweak range when effect should run*/
-	animation-range: entry 15% cover 35%;
+  animation-range: entry 15% cover 35%;
 }
+/* stylelint-enable */
 
 .img-works {
   height: 100%;
@@ -440,7 +443,6 @@ main {
   grid-template-rows: 1fr;
   gap: 0.75em;
   margin-bottom: 2.25em;
-  /* box-shadow: 1px 1px 4px rgb(172, 168, 168); */
   border-radius: 5px;
   border: 1px solid #dfe1e6;
   padding: 5px;
@@ -471,7 +473,6 @@ main {
 
 .title-summary {
   cursor: pointer;
-  margin-bottom: 10px;
   box-shadow: 1px 1px 4px rgb(172, 168, 168);
   border-radius: 5px;
   padding: 5px;
@@ -806,7 +807,6 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(122px, 1fr));
     gap: 0.75em;
     justify-items: center;
-
   }
 
   .lng-item {
