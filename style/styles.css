@@ -253,6 +253,33 @@ main {
   width: 100%;
 }
 
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+/* stylelint-disable */
+.revealing-image {
+	/* Create View Timeline */
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+  animation: linear reveal both;
+  animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+  animation-range: entry 15% cover 35%;
+}
+/* stylelint-enable */
+
 .img-works {
   height: 100%;
   width: 100%;
@@ -341,6 +368,7 @@ main {
 }
 
 .see-button {
+  text-decoration: none;
   font-size: 1.06em;
   font-weight: 500;
   line-height: 1.5rem;
@@ -411,14 +439,12 @@ main {
 }
 
 .lang {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-rows: 1fr;
   gap: 0.75em;
   margin-bottom: 2.25em;
-  box-shadow: 1px 1px 4px rgb(172, 168, 168);
   border-radius: 5px;
+  border: 1px solid #dfe1e6;
   padding: 5px;
 }
 
@@ -447,7 +473,6 @@ main {
 
 .title-summary {
   cursor: pointer;
-  margin-bottom: 10px;
   box-shadow: 1px 1px 4px rgb(172, 168, 168);
   border-radius: 5px;
   padding: 5px;
@@ -612,12 +637,6 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
   padding: 16px;
-
-  /* transform: scale(0.6); */
-
-  /* opacity: 0; */
-
-  /* transition: .3s ease all; */
 }
 
 .popup-image {
@@ -632,12 +651,10 @@ main {
 }
 
 .img-snapshot {
-  width: auto;
-  height: 220px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-
-  /* padding-top: 20px; */
-  border-radius: 4px;
+  border-radius: 15px;
 }
 
 .popup-txt {
@@ -789,6 +806,7 @@ main {
   .lang {
     grid-template-columns: repeat(auto-fill, minmax(122px, 1fr));
     gap: 0.75em;
+    justify-items: center;
   }
 
   .lng-item {

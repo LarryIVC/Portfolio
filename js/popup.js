@@ -8,8 +8,8 @@ works.forEach((datos, index) => {
     cardWorks += 'reverse';
   }
   cardWorks += `" id="portfolio">
-    <div class="div-img">
-    <img class="img-works" src="${datos.image}" alt="Avocode Snapshoot">                    
+    <div class="div-img revealing-image">
+      <img class="img-works" src="${datos.image}" alt="${datos.name} Snapshoot">                    
     </div>
     <div class="work-desc">
         <h2 class="title-works">${datos.name}</h2>
