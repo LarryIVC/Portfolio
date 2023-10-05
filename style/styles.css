@@ -612,6 +612,7 @@ body.dark .about-desc p {
 
 .about-skills ul {
   list-style: none;
+  text-decoration: none;
 }
 
 .lang {
@@ -1100,6 +1101,12 @@ body.dark .popup-txt {
 
   .form-container p {
     padding: 0 7.25em;
+  }
+
+  .mail-me {
+    text-decoration: none;
+    font-weight: 700;
+    color: #131313;
   }
 
   #input-form {
