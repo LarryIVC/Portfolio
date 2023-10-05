@@ -291,6 +291,7 @@ body.dark .page1 h1 {
   text-wrap: wrap;
   transition: 0.3s ease-in-out all;
 }
+/* stylelint-enable */
 
 .about-desc p {
   font-size: 1em;
@@ -654,6 +655,7 @@ body.dark .about-skills ul hr {
 .languages {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .title-summary {
@@ -662,6 +664,14 @@ body.dark .about-skills ul hr {
   border-radius: 5px;
   padding: 5px;
   transition: 0.3s ease-in-out all;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.title-summary::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
 }
 
 body.dark .title-summary {
