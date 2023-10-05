@@ -1,7 +1,7 @@
 const works = [
   {
     name: 'Fast Land Racers',
-    description: 'Fast-Lane-Racer is a car booking website that allows users to easily book a ride and travel to their desired destinations. User can reserve a car from the available cars by providing the date and city. Fast-Lane-Racer provides a seamless and reliable car booking experience.',
+    description: 'Fast-Lane-Racer is a car booking website that allows users to easily book a ride and travel to their desired destinations. User can reserve a car from the available cars by providing the date and city. Provides a seamless and reliable car booking experience.',
     smalldesc: 'Is a car booking website that allows users to easily book a ride and travel to their desired destinations.',
     image: 'image/mock-racer.webp',
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript', 'PostgreSQL', 'React', 'Redux'],

@@ -1,3 +1,8 @@
+import './popup.js';
+import './storage.js';
+import './formValidate.js';
+import './darkMode.js';
+
 const modalOpen = document.getElementById('open-modal');
 const modalContainer = document.getElementById('container-menu-modal');
 const modalClose = document.getElementById('btn-close');
