@@ -678,6 +678,11 @@ body.dark .title-summary {
   border: 1px solid #715cfd;
 }
 
+body.dark .title-summary::after {
+  content: "▼";
+  color: #dfe1e6;
+}
+
 .languages span {
   font-size: 20px;
   font-weight: 500;
