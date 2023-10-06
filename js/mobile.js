@@ -9,6 +9,11 @@ const modalClose = document.getElementById('btn-close');
 const blurContainer = document.getElementById('first-container');
 const mainContainer = document.getElementById('main');
 
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.lds-roller');
+  loader.style.display = 'none';
+});
+
 function openModal() {
   blurContainer.classList.add('blurize');
   mainContainer.classList.add('blurize');

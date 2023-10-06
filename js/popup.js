@@ -3,12 +3,12 @@ import works from './projects.js';
 const worksContainer = document.querySelector('.works');
 let cardWorks = '';
 works.forEach((datos, index) => {
-  cardWorks += '<div class="works1 ';
+  cardWorks += '<div class="works1 revealing-image ';
   if (index % 2 !== 0) {
     cardWorks += 'reverse';
   }
   cardWorks += `" id="portfolio">
-    <div class="div-img revealing-image">
+    <div class="div-img">
       <img class="img-works" src="${datos.image}" alt="${datos.name} Snapshoot">                    
     </div>
     <div class="work-desc">

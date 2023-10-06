@@ -415,7 +415,7 @@ body.dark .works1 {
   animation-timeline: --revealing-image;
 
   /* Tweak range when effect should run*/
-  animation-range: entry 15% cover 35%;
+  animation-range: entry 25% cover 50%;
 }
 
 /* stylelint-enable */
