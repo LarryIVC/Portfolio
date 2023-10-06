@@ -291,6 +291,7 @@ body.dark .page1 h1 {
   text-wrap: wrap;
   transition: 0.3s ease-in-out all;
 }
+/* stylelint-enable */
 
 .about-desc p {
   font-size: 1em;
@@ -322,7 +323,6 @@ body.dark .page1 p {
   color: #d7d7d7;
 }
 
-/* stylelint-enable */
 .sub-txt {
   font-weight: 500;
   font-size: 1em;
@@ -414,7 +414,7 @@ body.dark .works1 {
   animation-timeline: --revealing-image;
 
   /* Tweak range when effect should run*/
-  animation-range: entry 15% cover 35%;
+  animation-range: entry 25% cover 50%;
 }
 
 /* stylelint-enable */
@@ -611,6 +611,7 @@ body.dark .about-desc p {
 
 .about-skills ul {
   list-style: none;
+  text-decoration: none;
 }
 
 .lang {
@@ -654,6 +655,7 @@ body.dark .about-skills ul hr {
 .languages {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .title-summary {
@@ -662,6 +664,14 @@ body.dark .about-skills ul hr {
   border-radius: 5px;
   padding: 5px;
   transition: 0.3s ease-in-out all;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.title-summary::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
 }
 
 body.dark .title-summary {
@@ -1090,6 +1100,12 @@ body.dark .popup-txt {
 
   .form-container p {
     padding: 0 7.25em;
+  }
+
+  .mail-me {
+    text-decoration: none;
+    font-weight: 700;
+    color: #131313;
   }
 
   #input-form {
