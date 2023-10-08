@@ -110,6 +110,7 @@ body.dark header {
 
 .my-header {
   margin: 0 auto;
+
   /* max-width: 23.4375em; */
   width: 100%;
   padding: 1.25em 2.18em 1.25em 1.5em;
@@ -126,8 +127,7 @@ body.dark header {
   line-height: 1.25rem;
   color: #6070ff;
   text-decoration: none;
-  transform: rotate(360deg);
-  
+  transform: rotate(360deg);  
   border-radius: 25px;
   transition: transform 3s, color 0.3s ease-in-out;
 }
@@ -263,7 +263,6 @@ body.dark .page1 {
   background-color: #222833;
 }
 
-
 .two-cols {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -283,12 +282,11 @@ body.dark .page1 {
   height: 100%;
 }
 
-
 .larry img {
   width: 100%;
   height: auto;
   background: #e6d4ef;
-  box-shadow: 1px 0px 3px 10px #16161660;
+  box-shadow: 1px 0 3px 10px #16161660;
   border-radius: 25px;
 }
 
