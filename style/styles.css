@@ -127,7 +127,7 @@ body.dark header {
   line-height: 1.25rem;
   color: #6070ff;
   text-decoration: none;
-  transform: rotate(360deg);  
+  transform: rotate(360deg);
   border-radius: 25px;
   transition: transform 3s, color 0.3s ease-in-out;
 }
