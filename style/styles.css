@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Lucida sans", sans-serif;
 }
 
 body {
@@ -27,6 +27,7 @@ body.dark {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 120;
 }
 
 .turn_on {
@@ -96,12 +97,28 @@ body.dark {
 /* fin modal */
 
 header {
-  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 10px 0 #6070ff;
+  background:
+    linear-gradient(
+      to right,
+      rgb(229, 231, 235),
+      rgb(212, 216, 222),
+      rgb(167, 176, 190)
+    );
   transition: 0.3s ease-in-out all;
 }
 
 body.dark header {
-  background: #222833;
+  background:
+    linear-gradient(
+      to right,
+      rgb(55, 65, 81),
+      rgb(17, 24, 39),
+      rgb(0, 0, 0)
+    );
 }
 
 .blurize {
@@ -110,10 +127,8 @@ body.dark header {
 
 .my-header {
   margin: 0 auto;
-
-  /* max-width: 23.4375em; */
   width: 100%;
-  padding: 1.25em 2.18em 1.25em 1.5em;
+  padding: 10px 24px 10px 24px;
   display: flex;
   justify-content: space-between;
 }
@@ -237,6 +252,7 @@ body.dark .item a {
 }
 
 main {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 7.12em;
@@ -252,6 +268,7 @@ body.dark main {
   width: 100%;
   background-image: url(../image/bg-header.png);
   background-repeat: no-repeat;
+  background-size: 95% 100%;
   padding: 6.25em 1.5em 0 1.5em;
   border-bottom-left-radius: 5em;
   background-color: #fff;
@@ -266,6 +283,7 @@ body.dark .page1 {
 .two-cols {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  align-items: end;
 }
 
 .pg1-container {
@@ -278,28 +296,77 @@ body.dark .page1 {
 }
 
 .larry {
-  width: 100%;
-  height: 100%;
-}
-
-.larry img {
-  width: 100%;
-  height: auto;
-  background: #e6d4ef;
-  box-shadow: 1px 0 3px 10px #16161660;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 10px 0 #2230d2;
+  background: #fff;
   border-radius: 25px;
-}
-
-.page1 h1 {
-  font-weight: 700;
-  font-size: 2.5em;
-  line-height: 3.25rem;
-  color: #172b4d;
+  animation: float 3s linear infinite;
   transition: 0.3s ease-in-out all;
 }
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3.5rem);
+  }
+}
+
+body.dark .larry {
+  box-shadow: 0 0 10px 0 #dbd9e7;
+  background: #172b4d;
+}
+
+/* stylelint-disable */
+.page1 h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  width: fit-content;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #172b4d, #a19a9a);
+  transition: 0.3s ease-in-out all;
+}
+/* stylelint-enable */
+
 body.dark .page1 h1 {
-  color: #d7d7d7;
+  background-image: linear-gradient(to right, #a19a9a, #172b4d);
+}
+
+.languages span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+}
+
+.lng-item span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+}
+
+.page1 h1 span {
+  font-weight: 900;
+}
+
+.destac {
+  color: #ebebff;
+  background-color: #6070ff;
+  border-radius: 8px;
+  padding: 0 4px;
+}
+
+body.dark .destac {
+  color: #6070ff;
+  background-color: #ebebff;
 }
 
 /* stylelint-disable */
@@ -310,6 +377,7 @@ body.dark .page1 h1 {
   color: #344563;
   text-wrap: wrap;
   transition: 0.3s ease-in-out all;
+  max-width: 500px;
 }
 /* stylelint-enable */
 
@@ -344,10 +412,11 @@ body.dark .page1 p {
 }
 
 .sub-txt {
-  font-weight: 500;
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   color: #7f8cff;
+  padding-bottom: 1rem;
 }
 
 .social {
@@ -355,12 +424,13 @@ body.dark .page1 p {
   padding: 0.87em 0 0 0.62em;
   list-style: none;
   gap: 1.25em;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .social li a img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   transition: 0.3s ease-in-out all;
 }
 
@@ -434,7 +504,7 @@ body.dark .works1 {
   animation-timeline: --revealing-image;
 
   /* Tweak range when effect should run*/
-  animation-range: entry 25% cover 50%;
+  animation-range: entry 15% cover 35%;
 }
 
 /* stylelint-enable */
@@ -681,6 +751,7 @@ body.dark .about-skills ul hr {
 .title-summary {
   cursor: pointer;
   border: 1px solid #dfe1e6;
+  box-shadow: 1px 1px 4px 0 rgb(172, 168, 168);
   border-radius: 5px;
   padding: 5px;
   transition: 0.3s ease-in-out all;
@@ -701,20 +772,6 @@ body.dark .title-summary {
 body.dark .title-summary::after {
   content: "▼";
   color: #dfe1e6;
-}
-
-.languages span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  color: black;
-}
-
-.lng-item span {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #253858;
 }
 
 body.dark .languages span {
@@ -763,7 +820,8 @@ body.dark .contact-form {
   border-top-left-radius: 5rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   padding: 0 1.5em 0.5em 1.5em;
 }
 
@@ -774,6 +832,10 @@ body.dark .form-container {
 
 .contact-center {
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body.dark .form-container h2 {
@@ -864,6 +926,7 @@ body.dark .in-txt {
   justify-content: center;
   visibility: hidden;
   transition: 0.3s ease-in-out all;
+  z-index: 120;
 }
 
 body.dark .popup-principal {
@@ -965,9 +1028,10 @@ body.dark .popup-txt {
 
 @media screen and (min-width: 768px) {
   .my-header {
-    max-width: 80%;
+    /* max-width: 80%; */
     align-items: center;
-    padding: 0.62em 2.18em 1.62em 1.5em;
+    padding: 10px 34px 10px 34px;
+    max-width: 1200px;
   }
 
   .menu {
@@ -984,8 +1048,8 @@ body.dark .popup-txt {
   }
 
   .logo img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   main {
@@ -1009,6 +1073,11 @@ body.dark .popup-txt {
     margin: 0 auto;
     padding-bottom: 15.93em;
     height: auto;
+  }
+
+  .larry {
+    width: 100px;
+    height: 100px;
   }
 
   .works {
@@ -1127,10 +1196,18 @@ body.dark .popup-txt {
     padding: 0 7.25em;
   }
 
+  /* stylelint-disable */
   .mail-me {
     text-decoration: none;
     font-weight: 700;
-    color: #131313;
+    color: #2230d2;
+    text-wrap: wrap;
+    transition: 0.3s ease-in-out all;
+  }
+  /* stylelint-enable */
+
+  .mail-me:hover {
+    font-size: 1.4rem;
   }
 
   #input-form {
