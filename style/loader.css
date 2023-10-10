@@ -16,7 +16,8 @@
 }
 
 .lds-roller::after {
-  content: "Is Loading... Please Wait";
+  content: "The page is Loading...";
+  font-size: 4rem;
 }
 
 .lds-roller div {
