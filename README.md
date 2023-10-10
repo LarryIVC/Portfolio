@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Click <a href="https://larryivc.github.io/Portfolio">here</a> to live demo versión.
+Click <a href="https://larry-web-dev.netlify.app/">here</a> to live demo versión.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,19 +112,13 @@ Example command:
 
 - GitHub: [@LarryIVC](https://github.com/LarryIVC)
 - Twitter: [@LarryVillegas](https://twitter.com/LarryVillegas)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/larry-villegas-26216b259/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/larryvillegascostas)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
-
-👤 ** Carlos Igreda **
-
-- GitHub: [@CarlosIgreda](https://github.com/CarlosIgreda)
-- Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
-- LinkedIn: [carlos-jesús-igreda-rivas-323763116](https://www.linkedin.com/in/carlos-jes%C3%BAs-igreda-rivas-323763116/)
 
 Contributions, issues, and feature requests are welcome!
 

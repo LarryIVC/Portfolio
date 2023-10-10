@@ -101,24 +101,24 @@ header {
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 10px 0 #6070ff;
-  /* background: #fff; */
-  background: linear-gradient(
-    to right,
-    rgb(229, 231, 235),
-    rgb(212, 216, 222),
-    rgb(167, 176, 190)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgb(229, 231, 235),
+      rgb(212, 216, 222),
+      rgb(167, 176, 190)
+    );
   transition: 0.3s ease-in-out all;
 }
 
 body.dark header {
-  /* background: #222833; */
-  background: linear-gradient(
-    to right,
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgb(55, 65, 81),
+      rgb(17, 24, 39),
+      rgb(0, 0, 0)
+    );
 }
 
 .blurize {
@@ -310,6 +310,7 @@ body.dark .page1 {
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-3.5rem);
   }
@@ -320,6 +321,7 @@ body.dark .larry {
   background: #172b4d;
 }
 
+/* stylelint-disable */
 .page1 h1 {
   font-weight: 700;
   font-size: 40px;
@@ -331,9 +333,24 @@ body.dark .larry {
   background-image: linear-gradient(to right, #172b4d, #a19a9a);
   transition: 0.3s ease-in-out all;
 }
+/* stylelint-enable */
 
 body.dark .page1 h1 {
   background-image: linear-gradient(to right, #a19a9a, #172b4d);
+}
+
+.languages span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+}
+
+.lng-item span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
 }
 
 .page1 h1 span {
@@ -343,7 +360,6 @@ body.dark .page1 h1 {
 .destac {
   color: #ebebff;
   background-color: #6070ff;
-  /* background: linear-gradient(90deg, #6070ff 0%, #babddf 100%); */
   border-radius: 8px;
   padding: 0 4px;
 }
@@ -758,20 +774,6 @@ body.dark .title-summary::after {
   color: #dfe1e6;
 }
 
-.languages span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  color: black;
-}
-
-.lng-item span {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #253858;
-}
-
 body.dark .languages span {
   color: #d7d7d7;
 }
@@ -820,7 +822,6 @@ body.dark .contact-form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: left; */
   padding: 0 1.5em 0.5em 1.5em;
 }
 
@@ -834,7 +835,7 @@ body.dark .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 body.dark .form-container h2 {
@@ -945,7 +946,7 @@ body.dark .popup-principal {
   border-radius: 10px;
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
   padding: 16px;
-  transition: 0.3s ease-in-out all;  
+  transition: 0.3s ease-in-out all;
 }
 
 body.dark .popup-details {
@@ -1195,6 +1196,7 @@ body.dark .popup-txt {
     padding: 0 7.25em;
   }
 
+  /* stylelint-disable */
   .mail-me {
     text-decoration: none;
     font-weight: 700;
@@ -1202,6 +1204,7 @@ body.dark .popup-txt {
     text-wrap: wrap;
     transition: 0.3s ease-in-out all;
   }
+  /* stylelint-enable */
 
   .mail-me:hover {
     font-size: 1.4rem;

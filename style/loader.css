@@ -7,12 +7,13 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(
-    to right,
-    rgb(233, 213, 255),
-    rgb(192, 132, 252),
-    rgb(107, 33, 168)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgb(233, 213, 255),
+      rgb(192, 132, 252),
+      rgb(107, 33, 168)
+    );
 }
 
 .lds-roller::after {
