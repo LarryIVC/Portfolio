@@ -298,9 +298,10 @@ body.dark .page1 {
 .larry {
   width: 80px;
   height: 80px;
-  box-shadow: 0 0 10px 0 #2230d2;
-  background: #fff;
-  border-radius: 25px;
+  filter: drop-shadow(0 0 30px #2231d286);
+  background: #ffffffd2;
+  border-radius: 25000px;
+  padding: 10px;
   animation: float 3s linear infinite;
   transition: 0.3s ease-in-out all;
 }
