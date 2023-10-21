@@ -426,7 +426,7 @@ body.dark .page1 p {
   list-style: none;
   gap: 1.25em;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .social li a img {
@@ -1197,15 +1197,14 @@ body.dark .popup-txt {
     padding: 0 7.25em;
   }
 
-  /* stylelint-disable */
   .mail-me {
     text-decoration: none;
     font-weight: 700;
-    color: #2230d2;
-    text-wrap: wrap;
+    color: #fff;
+    text-decoration: underline;
+    text-wrap: balance;
     transition: 0.3s ease-in-out all;
   }
-  /* stylelint-enable */
 
   .mail-me:hover {
     font-size: 1.4rem;
