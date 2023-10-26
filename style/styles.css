@@ -198,8 +198,10 @@ body.dark .logo {
 }
 
 body.dark .item a {
-  color: #715cfd;
-  border: 1px solid #715cfd;
+  /* color: #715cfd;
+  border: 1px solid #715cfd; */
+  color: #7f8cff;
+  border: 1px solid #7f8cff;
 }
 
 .item:hover {
