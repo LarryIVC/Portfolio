@@ -198,8 +198,10 @@ body.dark .logo {
 }
 
 body.dark .item a {
-  color: #715cfd;
-  border: 1px solid #715cfd;
+  /* color: #715cfd;
+  border: 1px solid #715cfd; */
+  color: #7f8cff;
+  border: 1px solid #7f8cff;
 }
 
 .item:hover {
@@ -1197,14 +1199,15 @@ body.dark .popup-txt {
     padding: 0 7.25em;
   }
 
+  /* stylelint-disable */
   .mail-me {
-    text-decoration: none;
     font-weight: 700;
     color: #fff;
     text-decoration: underline;
     text-wrap: balance;
     transition: 0.3s ease-in-out all;
   }
+  /* stylelint-enable */
 
   .mail-me:hover {
     font-size: 1.4rem;

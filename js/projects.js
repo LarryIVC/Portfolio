@@ -12,6 +12,18 @@ const works = [
     year: '2023',
   },
   {
+    name: 'Tesla Clone',
+    description: 'Tesla Clone is a replica of the Tesla website. It is a static website built using Astro, Tailwind.',
+    smalldesc: 'Tesla Clone is a replica of the Tesla website.',
+    image: 'image/tesla-landing.webp',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Astro', 'Tailwind'],
+    linkLive: 'https://tesla-clon-larry.netlify.app/',
+    linkCode: 'https://github.com/LarryIVC/astro-landing',
+    enterprise: 'Tesla',
+    stack: 'Front End Dev',
+    year: '2023',
+  },
+  {
     name: 'Pennywise',
     description: 'Pennywise: Simplify your finances. Track expenses, set budgets, gain insights, and make informed decisions for financial freedom. Get started today!',
     smalldesc: 'Manage your finances with ease: expenses and budgets.',
