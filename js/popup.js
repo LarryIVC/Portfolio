@@ -9,7 +9,7 @@ works.forEach((datos, index) => {
   }
   cardWorks += `" id="portfolio">
     <div class="div-img">
-      <img class="img-works" src="${datos.image}" alt="${datos.name} Snapshoot">                    
+      <img class="img-works" src="${datos.image}" alt="${datos.name} Snapshoot" loading="lazy">                    
     </div>
     <div class="work-desc">
         <h2 class="title-works">${datos.name}</h2>
@@ -63,7 +63,7 @@ for (let pointer = 0; pointer < works.length; pointer += 1) {
                 <li>${works[pointer].year}</li>
               </ul>
             </div>
-            <img class="img-snapshot" src="${works[pointer].image}" alt="Snapshoot 1">
+            <img class="img-snapshot" src="${works[pointer].image}" alt="Snapshoot 1" loading="lazy">
           </div>
           <div class="popup-desc">
             <div class="popup-text">
