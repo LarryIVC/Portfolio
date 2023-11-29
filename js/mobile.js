@@ -10,7 +10,7 @@ const blurContainer = document.getElementById('first-container');
 const mainContainer = document.getElementById('main');
 
 window.addEventListener('load', () => {
-  const loader = document.querySelector('.lds-roller');
+  const loader = document.querySelector('.loader-container');
   loader.style.display = 'none';
 });
 
