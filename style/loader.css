@@ -1,25 +1,46 @@
-.lds-roller {
+.loader-container {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  /* position: relative; */
   width: 100vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   height: 100vh;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
-  background:
-    linear-gradient(
-      to right,
-      rgb(233, 213, 255),
-      rgb(192, 132, 252),
-      rgb(107, 33, 168)
-    );
+  text-align: center;
+  font-size: 2rem;
+
+  color: #6070ff;
+  background: linear-gradient(
+    to right,
+    rgb(233, 213, 255),
+    rgb(192, 132, 252),
+    rgb(107, 33, 168)
+  );
 }
 
-.lds-roller::after {
+.lds-roller {
+  display: flex;
+  position: relative;
+  filter: drop-shadow(0 0 0.75rem #6070ff);
+  /* width: 100vw; */
+  margin: 0 auto;
+  /* height: 100vh; */
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    to right,
+    rgb(233, 213, 255),
+    rgb(192, 132, 252),
+    rgb(107, 33, 168)
+  );
+}
+
+/* .lds-roller::after {
   content: "The page is Loading...";
   font-size: 4rem;
-}
+} */
 
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
