@@ -1,40 +1,45 @@
 .loader-container {
   display: flex;
   flex-direction: column;
+
   /* position: relative; */
   width: 100vw;
+
   /* margin: 0 auto; */
   height: 100vh;
   justify-content: center;
   align-content: center;
   text-align: center;
   font-size: 2rem;
-
   color: #6070ff;
-  background: linear-gradient(
-    to right,
-    rgb(233, 213, 255),
-    rgb(192, 132, 252),
-    rgb(107, 33, 168)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgb(233, 213, 255),
+      rgb(192, 132, 252),
+      rgb(107, 33, 168)
+    );
 }
 
 .lds-roller {
   display: flex;
   position: relative;
   filter: drop-shadow(0 0 0.75rem #6070ff);
+
   /* width: 100vw; */
   margin: 0 auto;
+
   /* height: 100vh; */
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(
-    to right,
-    rgb(233, 213, 255),
-    rgb(192, 132, 252),
-    rgb(107, 33, 168)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgb(233, 213, 255),
+      rgb(192, 132, 252),
+      rgb(107, 33, 168)
+    );
 }
 
 /* .lds-roller::after {

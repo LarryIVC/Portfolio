@@ -103,23 +103,13 @@ header {
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 10px 0 #6070ff;
-  background: linear-gradient(
-    to right,
-    rgb(229, 231, 235),
-    rgb(212, 216, 222),
-    rgb(167, 176, 190)
-  );
+  background: linear-gradient(to right, rgb(229, 231, 235), rgb(212, 216, 222), rgb(167, 176, 190));
   transition: 0.3s ease-in-out all;
   backdrop-filter: blur(1px);
 }
 
 body.dark header {
-  background: linear-gradient(
-    to right,
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
-  );
+  background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
 .blurize {
