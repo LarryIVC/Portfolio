@@ -127,7 +127,7 @@
       <div class="about-skills">
         <ul>
           <li>
-            <details class="languages">
+            <details name="skills-group" class="languages">
               <summary class="title-summary">
                 <span>Languages</span>
               </summary>
@@ -162,7 +162,7 @@
           </li>
 
           <li>
-            <details class="languages">
+            <details name="skills-group" class="languages">
               <summary class="title-summary">
                 <span>Frameworks</span>
               </summary>
@@ -212,7 +212,7 @@
           </li>
           <hr>
           <li>
-            <details class="languages">
+            <details name="skills-group" class="languages">
               <summary class="title-summary">
                 <span>Skills</span>
               </summary>
@@ -255,10 +255,16 @@
           assist you. Please feel free to contact me by leaving a message or sending an <a class="mail-me"
             href="mailto:larry_villegas@hotmail.com?subject=From the Larry's portfolio">email.📩</a></p>
         <form id="input-form" action="https://formspree.io/f/mnqyvdqr" method="post">
-          <input class="user_name in-txt" type="text" name="user_name" placeholder="Your name" maxlength="30" required>
-          <input class="email in-txt" type="email" name="email" placeholder="Your email" required autocomplete="email">
-          <textarea type="textarea" class="message in-txt area" name="message" id="mesaage" cols="30" rows="10"
-            placeholder="Leave your message here" maxlength="500" required></textarea>
+          <label>
+            <input class="user_name in-txt" type="text" name="user_name" placeholder="Your name" maxlength="30" required>
+          </label>
+          <label >
+            <input class="email in-txt" type="email" name="email" placeholder="Your email" required autocomplete="email">
+          </label>
+          <label>
+            <textarea type="textarea" class="message in-txt area" name="message" id="mesaage" cols="30" rows="10"
+              placeholder="Leave your message here" maxlength="500" required></textarea>
+          </label>
           <div class="btnContainer">
             <input type="submit" class="see-button" value="Get in touch">
             <span id="error"></span>
