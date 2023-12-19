@@ -97,26 +97,19 @@ body.dark {
 /* fin modal */
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 10px 0 #6070ff;
-  background: linear-gradient(
-    to right,
-    rgb(229, 231, 235),
-    rgb(212, 216, 222),
-    rgb(167, 176, 190)
-  );
+  background: linear-gradient(to right, rgb(229, 231, 235), rgb(212, 216, 222), rgb(167, 176, 190));
   transition: 0.3s ease-in-out all;
+  backdrop-filter: blur(1px);
 }
 
 body.dark header {
-  background: linear-gradient(
-    to right,
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
-  );
+  background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
 .blurize {
@@ -254,7 +247,7 @@ body.dark .item a {
 }
 
 main {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   gap: 7.12em;
@@ -267,7 +260,7 @@ body.dark main {
 }
 
 .page1 {
-  width: 100%;
+  /* width: 100%; */
   background-image: url(../image/bg-header.png);
   background-repeat: no-repeat;
   background-size: 95% 100%;
