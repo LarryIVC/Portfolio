@@ -101,24 +101,22 @@ header {
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 10px 0 #6070ff;
-  background:
-    linear-gradient(
-      to right,
-      rgb(229, 231, 235),
-      rgb(212, 216, 222),
-      rgb(167, 176, 190)
-    );
+  background: linear-gradient(
+    to right,
+    rgb(229, 231, 235),
+    rgb(212, 216, 222),
+    rgb(167, 176, 190)
+  );
   transition: 0.3s ease-in-out all;
 }
 
 body.dark header {
-  background:
-    linear-gradient(
-      to right,
-      rgb(55, 65, 81),
-      rgb(17, 24, 39),
-      rgb(0, 0, 0)
-    );
+  background: linear-gradient(
+    to right,
+    rgb(55, 65, 81),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
 }
 
 .blurize {
@@ -185,6 +183,10 @@ body.dark .logo {
   color: #6070ff;
 }
 
+.item {
+  transition: 0.3s ease-in-out all;
+}
+
 .item a {
   text-decoration: none;
   font-size: 1rem;
@@ -194,19 +196,16 @@ body.dark .logo {
   border-radius: 5px;
   padding: 5px 10px;
   color: #172b4d;
-  transition: 0.3s ease-in-out all;
 }
 
 body.dark .item a {
-  /* color: #715cfd;
-  border: 1px solid #715cfd; */
+
   color: #7f8cff;
   border: 1px solid #7f8cff;
 }
 
 .item:hover {
-  transform: scale(1.2);
-  transition-duration: 300ms;
+  transform: scale(1.2);  
 }
 
 .switch {
@@ -217,6 +216,7 @@ body.dark .item a {
   cursor: pointer;
   display: flex;
   outline: none;
+  transition: 0.3s ease-in-out all;
 }
 
 .switch span {
@@ -226,6 +226,7 @@ body.dark .item a {
   display: block;
   background: none;
   color: #fff;
+  transition: 0.3s ease-in-out all;
 }
 
 .switch::after {
@@ -239,7 +240,6 @@ body.dark .item a {
   left: unset;
   right: 0;
   border-radius: 100px;
-  transition: 0.3s ease all;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -622,6 +622,10 @@ body.dark .work-desc p {
   border: #7f8cff solid 1px;
   border-radius: 8px;
   background-color: #fff;
+  transition: 0.3s ease-in-out all;
+  /* filter:drop-shadow(1px 1px 0px #555); */
+  box-shadow: 1px 1px 0px #555;
+  cursor: pointer;
 }
 
 .see-button:active {
@@ -637,8 +641,8 @@ body.dark .work-desc p {
 .see-button:hover {
   background: #6070ff;
   color: white;
-  cursor: pointer;
-  transition: 0.3s ease-in-out all;
+  transform: translate(1px, 1px);
+  border: 2px solid #fff;
 }
 
 body.dark .see-button {
@@ -862,10 +866,22 @@ body.dark .form-container h2 {
   line-height: 1.25rem;
   border: 1px solid #cfd8dc;
   margin-bottom: 1.25em;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.in-txt:focus {
+  /* outline: 1px solid #555; */
+  background-color: #a598f7;
+  color:#fff; 
+  &::placeholder {
+    color: #fff;
+  }
 }
 
 .in-txt:hover {
-  transform: translate(5px, 2px);
+  transform: translate(1px, 1px);
 }
 
 body.dark .in-txt {
